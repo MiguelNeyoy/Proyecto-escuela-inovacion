@@ -1,0 +1,7 @@
+{
+  "name": "Buy&Safely",
+  "description": "A secure marketplace for PC components with trend tracking and smart search.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
