@@ -1,103 +1,165 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Búsqueda de Procesador</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-<script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#4361EE",
-                        "background-light": "#F8F7FF",
-                        "background-dark": "#121212",
-                    },
-                    fontFamily: {
-                        display: ["Poppins", "sans-serif"],
-                    },
-                    borderRadius: {
-                        DEFAULT: "0.75rem",
-                    },
-                },
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Búsqueda de Procesador</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4361EE",
+              "background-light": "#F8F7FF",
+              "background-dark": "#121212",
             },
-        };
+            fontFamily: {
+              display: ["Poppins", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.75rem",
+            },
+          },
+        },
+      };
     </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
-        }
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
     </style>
-<style>
-        body {
-            min-height: max(884px, 100dvh);
-        }
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
     </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
   </head>
-<body class="bg-background-light dark:bg-background-dark font-display">
-<div class="mx-auto max-w-sm overflow-hidden rounded-3xl bg-background-light dark:bg-background-dark shadow-xl">
-<div class="h-screen p-6 flex flex-col">
-<div class="flex justify-between items-center text-black dark:text-white">
-<span class="text-sm font-semibold">9:30</span>
-<div class="flex items-center space-x-1.5">
-<span class="material-symbols-outlined text-base">signal_cellular_alt</span>
-<span class="material-symbols-outlined text-base">wifi</span>
-<span class="material-symbols-outlined text-base">battery_full</span>
-</div>
-</div>
-<header class="flex items-center pt-8 pb-6">
-<button class="text-black dark:text-white p-2 -ml-2">
-<span class="material-symbols-outlined text-3xl">arrow_back_ios_new</span>
-</button>
-<h1 class="text-2xl font-bold text-black dark:text-white flex-grow text-center">Procesadores</h1>
-<div class="w-9"></div>
-</header>
-<main class="flex-grow">
-<p class="text-gray-500 dark:text-gray-400 mb-8 text-center">
-                    Rellena los campos para encontrar el procesador que necesitas.
-                </p>
-<form class="space-y-6">
-<div>
-<label class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300" for="marca">Marca</label>
-<div class="relative">
-<select class="w-full appearance-none pl-4 pr-10 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-none rounded-lg focus:ring-2 focus:ring-primary focus:ring-opacity-50" id="marca">
-<option>Selecciona una marca</option>
-<option>Intel</option>
-<option>AMD</option>
-</select>
-<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">expand_more</span>
-</div>
-</div>
-<div>
-<label class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300" for="serie">Serie</label>
-<input class="w-full pl-4 pr-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-none rounded-lg focus:ring-2 focus:ring-primary focus:ring-opacity-50" id="serie" placeholder="Ej: Core i9, Ryzen 7" type="text"/>
-</div>
-<div>
-<label class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300" for="generacion">Generación</label>
-<input class="w-full pl-4 pr-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-none rounded-lg focus:ring-2 focus:ring-primary focus:ring-opacity-50" id="generacion" placeholder="Ej: 13th, 7000 Series" type="text"/>
-</div>
-<div>
-<label class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300" for="socket">Socket</label>
-<input class="w-full pl-4 pr-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-none rounded-lg focus:ring-2 focus:ring-primary focus:ring-opacity-50" id="socket" placeholder="Ej: LGA1700, AM5" type="text"/>
-</div>
-</form>
-</main>
-<div class="flex-shrink-0 pt-8 pb-4">
-<button class="w-full bg-primary text-white font-bold py-4 rounded-lg hover:bg-opacity-90 transition-colors flex items-center justify-center space-x-2">
-<span>Buscar</span>
-<span class="material-symbols-outlined">search</span>
-</button>
-<div class="w-32 h-1.5 bg-black dark:bg-gray-700 rounded-full mx-auto mt-6"></div>
-</div>
-</div>
-</div>
-
-</body></html>
+  <body class="bg-background-light dark:bg-background-dark font-display">
+    <div
+      class="mx-auto max-w-sm overflow-hidden rounded-3xl bg-background-light dark:bg-background-dark shadow-xl"
+    >
+      <div class="h-screen p-6 flex flex-col">
+        <div
+          class="flex justify-between items-center text-black dark:text-white"
+        >
+          <span class="text-sm font-semibold">9:30</span>
+          <div class="flex items-center space-x-1.5">
+            <span class="material-symbols-outlined text-base"
+              >signal_cellular_alt</span
+            >
+            <span class="material-symbols-outlined text-base">wifi</span>
+            <span class="material-symbols-outlined text-base"
+              >battery_full</span
+            >
+          </div>
+        </div>
+        <header class="flex items-center pt-8 pb-6">
+          <button class="text-black dark:text-white p-2 -ml-2">
+            <span class="material-symbols-outlined text-3xl"
+              >arrow_back_ios_new</span
+            >
+          </button>
+          <h1
+            class="text-2xl font-bold text-black dark:text-white flex-grow text-center"
+          >
+            Procesadores
+          </h1>
+          <div class="w-9"></div>
+        </header>
+        <main class="flex-grow">
+          <p class="text-gray-500 dark:text-gray-400 mb-8 text-center">
+            Rellena los campos para encontrar el procesador que necesitas.
+          </p>
+          <form class="space-y-6">
+            <div>
+              <label
+                class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300"
+                for="marca"
+                >Marca</label
+              >
+              <div class="relative">
+                <select
+                  class="w-full appearance-none pl-4 pr-10 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-none rounded-lg focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+                  id="marca"
+                >
+                  <option>Selecciona una marca</option>
+                  <option>Intel</option>
+                  <option>AMD</option>
+                </select>
+                <span
+                  class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"
+                  >expand_more</span
+                >
+              </div>
+            </div>
+            <div>
+              <label
+                class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300"
+                for="serie"
+                >Serie</label
+              >
+              <input
+                class="w-full pl-4 pr-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-none rounded-lg focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+                id="serie"
+                placeholder="Ej: Core i9, Ryzen 7"
+                type="text"
+              />
+            </div>
+            <div>
+              <label
+                class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300"
+                for="generacion"
+                >Generación</label
+              >
+              <input
+                class="w-full pl-4 pr-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-none rounded-lg focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+                id="generacion"
+                placeholder="Ej: 13th, 7000 Series"
+                type="text"
+              />
+            </div>
+            <div>
+              <label
+                class="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300"
+                for="socket"
+                >Socket</label
+              >
+              <input
+                class="w-full pl-4 pr-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-none rounded-lg focus:ring-2 focus:ring-primary focus:ring-opacity-50"
+                id="socket"
+                placeholder="Ej: LGA1700, AM5"
+                type="text"
+              />
+            </div>
+          </form>
+        </main>
+        <div class="flex-shrink-0 pt-8 pb-4">
+          <button
+            class="w-full bg-primary text-white font-bold py-4 rounded-lg hover:bg-opacity-90 transition-colors flex items-center justify-center space-x-2"
+          >
+            <span>Buscar</span>
+            <span class="material-symbols-outlined">search</span>
+          </button>
+          <div
+            class="w-32 h-1.5 bg-black dark:bg-gray-700 rounded-full mx-auto mt-6"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

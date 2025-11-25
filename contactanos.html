@@ -1,126 +1,227 @@
 <!DOCTYPE html>
-<html lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Contáctanos</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-<script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            primary: "#007AFF",
-            "background-light": "#F9F9F9",
-            "background-dark": "#121212",
-            "card-light": "#FFFFFF",
-            "card-dark": "#1E1E1E",
-            "text-light": "#1C1C1E",
-            "text-dark": "#E5E5E7",
-            "text-secondary-light": "#6C6C70",
-            "text-secondary-dark": "#8E8E93",
-            "border-light": "#E5E5EA",
-            "border-dark": "#3A3A3C",
-            "icon-bg-light": "#EBF5FF",
-            "icon-bg-dark": "#2C2C2E",
-          },
-          fontFamily: {
-            display: ["Roboto", "sans-serif"],
-          },
-          borderRadius: {
-            DEFAULT: "0.75rem",
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contáctanos</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#007AFF",
+              "background-light": "#F9F9F9",
+              "background-dark": "#121212",
+              "card-light": "#FFFFFF",
+              "card-dark": "#1E1E1E",
+              "text-light": "#1C1C1E",
+              "text-dark": "#E5E5E7",
+              "text-secondary-light": "#6C6C70",
+              "text-secondary-dark": "#8E8E93",
+              "border-light": "#E5E5EA",
+              "border-dark": "#3A3A3C",
+              "icon-bg-light": "#EBF5FF",
+              "icon-bg-dark": "#2C2C2E",
+            },
+            fontFamily: {
+              display: ["Roboto", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.75rem",
+            },
           },
         },
-      },
-    };
-  </script>
-<style>
-    .instagram-icon {
-      fill: #E1306C;
-    }
-    .twitter-icon {
-      fill: #1DA1F2;
-    }
-    .facebook-icon {
-      fill: #1877F2;
-    }
-  </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
+      };
+    </script>
+    <style>
+      .instagram-icon {
+        fill: #e1306c;
+      }
+      .twitter-icon {
+        fill: #1da1f2;
+      }
+      .facebook-icon {
+        fill: #1877f2;
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
   </head>
-<body class="bg-background-light dark:bg-background-dark font-display">
-<div class="min-h-screen flex flex-col p-4">
-<header class="relative flex items-center justify-center w-full mb-2">
-<button class="absolute left-0 text-text-light dark:text-text-dark">
-<span class="material-icons">arrow_back</span>
-</button>
-<h1 class="text-lg font-semibold text-text-light dark:text-text-dark">Contáctanos</h1>
-</header>
-<main class="flex-grow flex flex-col justify-center">
-<div class="space-y-4">
-<div class="flex items-center p-4 bg-card-light dark:bg-card-dark rounded-lg shadow-sm">
-<div class="w-10 h-10 flex items-center justify-center bg-icon-bg-light dark:bg-icon-bg-dark rounded-lg mr-4">
-<span class="material-icons text-primary">email</span>
-</div>
-<span class="text-text-light dark:text-text-dark">soporte@componentes.com</span>
-</div>
-<div class="flex items-center p-4 bg-card-light dark:bg-card-dark rounded-lg shadow-sm">
-<div class="w-10 h-10 flex items-center justify-center bg-icon-bg-light dark:bg-icon-bg-dark rounded-lg mr-4">
-<span class="material-icons text-primary">call</span>
-</div>
-<span class="text-text-light dark:text-text-dark">+1 (555) 123-4567</span>
-</div>
-</div>
-<div class="my-6">
-<h2 class="text-xl font-bold text-text-light dark:text-text-dark text-center">O envíanos un mensaje</h2>
-</div>
-<form action="#" class="space-y-4" method="POST">
-<div>
-<label class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2" for="nombre">Nombre</label>
-<input class="w-full bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg p-3 text-text-light dark:text-text-dark placeholder-text-secondary-light dark:placeholder-text-secondary-dark focus:ring-primary focus:border-primary" id="nombre" name="nombre" placeholder="Ingresa tu nombre" type="text"/>
-</div>
-<div>
-<label class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2" for="email">Correo Electrónico</label>
-<input class="w-full bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg p-3 text-text-light dark:text-text-dark placeholder-text-secondary-light dark:placeholder-text-secondary-dark focus:ring-primary focus:border-primary" id="email" name="email" placeholder="tu@email.com" type="email"/>
-</div>
-<div>
-<label class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2" for="mensaje">Tu Mensaje</label>
-<textarea class="w-full bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg p-3 text-text-light dark:text-text-dark placeholder-text-secondary-light dark:placeholder-text-secondary-dark focus:ring-primary focus:border-primary" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="4"></textarea>
-</div>
-<div>
-<button class="w-full bg-primary text-white font-bold py-3 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" type="submit">
-          Enviar Mensaje
+  <body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="min-h-screen flex flex-col p-4">
+      <header class="relative flex items-center justify-center w-full mb-2">
+        <button class="absolute left-0 text-text-light dark:text-text-dark">
+          <span class="material-icons">arrow_back</span>
         </button>
-</div>
-</form>
-<div class="pt-6">
-<h3 class="text-xl font-bold text-text-light dark:text-text-dark text-center mb-4">Síguenos</h3>
-<div class="flex justify-center space-x-6">
-<a class="w-12 h-12 flex items-center justify-center bg-card-light dark:bg-card-dark rounded-full shadow-sm" href="#">
-<svg class="w-6 h-6 instagram-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.765.297 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.297-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.148-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.314.935 20.644.522 19.86.218 19.095-.083 18.225-.285 16.947-.344 15.667-.401 15.26-.417 12-.417h0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.06 1.17-.249 1.805-.413 2.227-.217.562-.477.96-.896 1.382-.42.419-.819.679-1.381.896-.422.164-1.057.36-2.227.413-1.266.057-1.646.07-4.85.07s-3.585-.015-4.85-.074c-1.17-.06-1.805-.249-2.227-.413-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.819-.896-1.381-.164-.422-.36-1.057-.413-2.227-.057-1.266-.07-1.646-.07-4.85s.015-3.585.074-4.85c.06-1.17.249-1.805.413-2.227.217-.562.477.96.896-1.382.42-.419.819-.679 1.381-.896.422-.164 1.057-.36 2.227-.413 1.266-.057 1.646-.07 4.85-.07zm0 9.261c-2.456 0-4.449 1.993-4.449 4.449s1.993 4.449 4.449 4.449 4.449-1.993 4.449-4.449-1.993-4.449-4.449-4.449zm0 7.332c-1.593 0-2.883-1.29-2.883-2.883s1.29-2.883 2.883-2.883 2.883 1.29 2.883 2.883-1.29 2.883-2.883 2.883zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.44-1.441-1.44z"></path></svg>
-<span class="sr-only">Instagram</span>
-</a>
-<a class="w-12 h-12 flex items-center justify-center bg-card-light dark:bg-card-dark rounded-full shadow-sm" href="#">
-<svg class="w-6 h-6 twitter-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.223.085 4.934 4.934 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
-<span class="sr-only">Twitter</span>
-</a>
-<a class="w-12 h-12 flex items-center justify-center bg-card-light dark:bg-card-dark rounded-full shadow-sm" href="#">
-<svg class="w-6 h-6 facebook-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
-<span class="sr-only">Facebook</span>
-</a>
-</div>
-</div>
-</main>
-</div>
-
-</body></html>
+        <h1 class="text-lg font-semibold text-text-light dark:text-text-dark">
+          Contáctanos
+        </h1>
+      </header>
+      <main class="flex-grow flex flex-col justify-center">
+        <div class="space-y-4">
+          <div
+            class="flex items-center p-4 bg-card-light dark:bg-card-dark rounded-lg shadow-sm"
+          >
+            <div
+              class="w-10 h-10 flex items-center justify-center bg-icon-bg-light dark:bg-icon-bg-dark rounded-lg mr-4"
+            >
+              <span class="material-icons text-primary">email</span>
+            </div>
+            <span class="text-text-light dark:text-text-dark"
+              >soporte@componentes.com</span
+            >
+          </div>
+          <div
+            class="flex items-center p-4 bg-card-light dark:bg-card-dark rounded-lg shadow-sm"
+          >
+            <div
+              class="w-10 h-10 flex items-center justify-center bg-icon-bg-light dark:bg-icon-bg-dark rounded-lg mr-4"
+            >
+              <span class="material-icons text-primary">call</span>
+            </div>
+            <span class="text-text-light dark:text-text-dark"
+              >+1 (555) 123-4567</span
+            >
+          </div>
+        </div>
+        <div class="my-6">
+          <h2
+            class="text-xl font-bold text-text-light dark:text-text-dark text-center"
+          >
+            O envíanos un mensaje
+          </h2>
+        </div>
+        <form action="#" class="space-y-4" method="POST">
+          <div>
+            <label
+              class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2"
+              for="nombre"
+              >Nombre</label
+            >
+            <input
+              class="w-full bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg p-3 text-text-light dark:text-text-dark placeholder-text-secondary-light dark:placeholder-text-secondary-dark focus:ring-primary focus:border-primary"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingresa tu nombre"
+              type="text"
+            />
+          </div>
+          <div>
+            <label
+              class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2"
+              for="email"
+              >Correo Electrónico</label
+            >
+            <input
+              class="w-full bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg p-3 text-text-light dark:text-text-dark placeholder-text-secondary-light dark:placeholder-text-secondary-dark focus:ring-primary focus:border-primary"
+              id="email"
+              name="email"
+              placeholder="tu@email.com"
+              type="email"
+            />
+          </div>
+          <div>
+            <label
+              class="block text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark mb-2"
+              for="mensaje"
+              >Tu Mensaje</label
+            >
+            <textarea
+              class="w-full bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg p-3 text-text-light dark:text-text-dark placeholder-text-secondary-light dark:placeholder-text-secondary-dark focus:ring-primary focus:border-primary"
+              id="mensaje"
+              name="mensaje"
+              placeholder="Escribe tu mensaje aquí..."
+              rows="4"
+            ></textarea>
+          </div>
+          <div>
+            <button
+              class="w-full bg-primary text-white font-bold py-3 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+              type="submit"
+            >
+              Enviar Mensaje
+            </button>
+          </div>
+        </form>
+        <div class="pt-6">
+          <h3
+            class="text-xl font-bold text-text-light dark:text-text-dark text-center mb-4"
+          >
+            Síguenos
+          </h3>
+          <div class="flex justify-center space-x-6">
+            <a
+              class="w-12 h-12 flex items-center justify-center bg-card-light dark:bg-card-dark rounded-full shadow-sm"
+              href="#"
+            >
+              <svg
+                class="w-6 h-6 instagram-icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.765.297 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.297-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.148-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.314.935 20.644.522 19.86.218 19.095-.083 18.225-.285 16.947-.344 15.667-.401 15.26-.417 12-.417h0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.06 1.17-.249 1.805-.413 2.227-.217.562-.477.96-.896 1.382-.42.419-.819.679-1.381.896-.422.164-1.057.36-2.227.413-1.266.057-1.646.07-4.85.07s-3.585-.015-4.85-.074c-1.17-.06-1.805-.249-2.227-.413-.562-.217-.96-.477-1.382-.896-.419-.42-.679-.819-.896-1.381-.164-.422-.36-1.057-.413-2.227-.057-1.266-.07-1.646-.07-4.85s.015-3.585.074-4.85c.06-1.17.249-1.805.413-2.227.217-.562.477.96.896-1.382.42-.419.819-.679 1.381-.896.422-.164 1.057-.36 2.227-.413 1.266-.057 1.646-.07 4.85-.07zm0 9.261c-2.456 0-4.449 1.993-4.449 4.449s1.993 4.449 4.449 4.449 4.449-1.993 4.449-4.449-1.993-4.449-4.449-4.449zm0 7.332c-1.593 0-2.883-1.29-2.883-2.883s1.29-2.883 2.883-2.883 2.883 1.29 2.883 2.883-1.29 2.883-2.883 2.883zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.44-1.441-1.44z"
+                ></path>
+              </svg>
+              <span class="sr-only">Instagram</span>
+            </a>
+            <a
+              class="w-12 h-12 flex items-center justify-center bg-card-light dark:bg-card-dark rounded-full shadow-sm"
+              href="#"
+            >
+              <svg
+                class="w-6 h-6 twitter-icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Twitter</title>
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.223.085 4.934 4.934 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                ></path>
+              </svg>
+              <span class="sr-only">Twitter</span>
+            </a>
+            <a
+              class="w-12 h-12 flex items-center justify-center bg-card-light dark:bg-card-dark rounded-full shadow-sm"
+              href="#"
+            >
+              <svg
+                class="w-6 h-6 facebook-icon"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Facebook</title>
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                ></path>
+              </svg>
+              <span class="sr-only">Facebook</span>
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

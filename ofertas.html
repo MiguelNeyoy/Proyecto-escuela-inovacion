@@ -1,188 +1,347 @@
 <!DOCTYPE html>
-<html class="" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Ofertas de Componentes</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#135bec",
-                        "background-light": "#f6f6f8",
-                        "background-dark": "#101622",
-                    },
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
+<html class="" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Ofertas de Componentes</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
             },
-        }
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
     </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-            font-size: 24px;
-        }
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+        font-size: 24px;
+      }
     </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
+    <style>
+      body {
+        min-height: max(884px, 100dvh);
+      }
+    </style>
   </head>
-<body class="bg-background-light dark:bg-background-dark font-display">
-<div class="relative flex h-auto min-h-screen w-full flex-col">
-<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
-<div class="flex items-center p-4">
-<div class="flex size-12 shrink-0 items-center justify-start">
-<span class="material-symbols-outlined text-zinc-800 dark:text-white">menu</span>
-</div>
-<h1 class="flex-1 text-center text-lg font-bold tracking-tight text-zinc-800 dark:text-white">Ofertas</h1>
-<div class="flex w-12 items-center justify-end">
-<button class="flex h-12 cursor-pointer items-center justify-center rounded-lg bg-transparent text-zinc-800 dark:text-white">
-<span class="material-symbols-outlined">shopping_cart</span>
-</button>
-</div>
-</div>
-<div class="px-4 pb-3 pt-1">
-<label class="flex flex-col min-w-40 h-12 w-full">
-<div class="flex w-full flex-1 items-stretch rounded-xl h-full">
-<div class="flex items-center justify-center rounded-l-xl border-y border-l border-zinc-200 bg-white pl-4 dark:border-zinc-700 dark:bg-zinc-800">
-<span class="material-symbols-outlined text-zinc-400 dark:text-zinc-500">search</span>
-</div>
-<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl border-y border-r border-zinc-200 bg-white px-4 text-base font-normal leading-normal text-zinc-800 placeholder:text-zinc-400 focus:outline-0 focus:ring-0 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:placeholder:text-zinc-500" placeholder="Buscar GPUs, CPUs, RAM..." value=""/>
-</div>
-</label>
-</div>
-<div class="flex gap-2 p-4 pt-1 overflow-x-auto">
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-primary/20 px-4">
-<p class="text-primary text-sm font-medium">Todo</p>
-</button>
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 px-4">
-<p class="text-zinc-700 dark:text-zinc-300 text-sm font-medium">GPUs</p>
-</button>
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 px-4">
-<p class="text-zinc-700 dark:text-zinc-300 text-sm font-medium">CPUs</p>
-</button>
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 px-4">
-<p class="text-zinc-700 dark:text-zinc-300 text-sm font-medium">RAM</p>
-</button>
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 px-4">
-<p class="text-zinc-700 dark:text-zinc-300 text-sm font-medium">SSD</p>
-</button>
-<button class="flex h-9 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 px-4">
-<p class="text-zinc-700 dark:text-zinc-300 text-sm font-medium">Motherboards</p>
-</button>
-</div>
-</header>
-<main class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4">
-<div class="flex flex-col gap-2">
-<div class="relative w-full">
-<div class="w-full aspect-square rounded-xl bg-cover bg-center bg-zinc-100 dark:bg-zinc-800" data-alt="NVIDIA GeForce RTX 4070 Graphics Card" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCcly8dhv53qL5fEYKrRI0g0t-yY-X1Y3FlIc_3Bi4HedFpPuDRs0__M5RAKF7sDKCVdwedQcaoCvrc7QiucITQzw68UcXUUlTBWObyJoPlXaX1OVcGwEPtZ_9gOmZWI1Dv94MAZrw9fWyN7SFnxYUe1ZruwMy-QG3SY-0o0clE3UysJocnB-U0jIeDifxaArwM3f4JxPPUkdC-8nK349O2xVKsRaJ6rOzZjGgynk6tyHKgtenOmyoMdrpnn20M-QREpWjgC5mMV4c");'></div>
-<div class="absolute top-2 right-2 flex h-7 items-center justify-center rounded-full bg-orange-500 px-2.5">
-<p class="text-xs font-bold text-white">-15%</p>
-</div>
-</div>
-<div class="flex flex-col px-1">
-<p class="text-base font-semibold leading-tight text-zinc-800 dark:text-white">NVIDIA GeForce RTX 4070</p>
-<div class="flex items-baseline gap-2">
-<p class="text-lg font-bold leading-normal text-primary">$549.99</p>
-<p class="text-sm font-normal leading-normal text-zinc-400 dark:text-zinc-500 line-through">$649.99</p>
-</div>
-</div>
-</div>
-<div class="flex flex-col gap-2">
-<div class="relative w-full">
-<div class="w-full aspect-square rounded-xl bg-cover bg-center bg-zinc-100 dark:bg-zinc-800" data-alt="AMD Ryzen 7 7800X3D Processor" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDlQ86rkwOIEolvL4l9KTkX14EYLXxud93829QfXhtdj8QQu2Q0Cb5ZFhxmwBVgzSsNJLor2zsfx6LEtKochkUa8adrulqtOqL1dzKPfPSoeOzpLSumyrOZmn3PZR1Dnj0dglNUuu5cURfc5jSVi6sLonaE-pB90tpeL3lSzMEgNckR60UcA2fsTZUMbjhhLcucM-deWbtGgBcFVJJS00ama2u_w5P4YveD7ZNY9yBLMSVwJlhrM1TUE8AWll7w5_Ups-Bh4bf3NaY");'></div>
-<div class="absolute top-2 right-2 flex h-7 items-center justify-center rounded-full bg-orange-500 px-2.5">
-<p class="text-xs font-bold text-white">-20%</p>
-</div>
-</div>
-<div class="flex flex-col px-1">
-<p class="text-base font-semibold leading-tight text-zinc-800 dark:text-white">AMD Ryzen 7 7800X3D</p>
-<div class="flex items-baseline gap-2">
-<p class="text-lg font-bold leading-normal text-primary">$399.99</p>
-<p class="text-sm font-normal leading-normal text-zinc-400 dark:text-zinc-500 line-through">$499.99</p>
-</div>
-</div>
-</div>
-<div class="flex flex-col gap-2">
-<div class="relative w-full">
-<div class="w-full aspect-square rounded-xl bg-cover bg-center bg-zinc-100 dark:bg-zinc-800" data-alt="Corsair Vengeance DDR5 32GB RAM Kit" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDZaB3UCWbyMVJZbiYNHL2DQn57O_KXQKjyndl-leOCBZnESDtQmrTO47ElAdc0ScNxvnXnVzZXsDx3sSb_91DlkXy9Ux8OnJbmdIIwPc7QXM5pALg53DVFccEgrWZeNSJRR1wMNaEYnmgnvskU0dEmrpc-atTJSSb6qzfIxRdi_3Av1gfZ9K3dfkYrkO8Va85nD-W3yul7F9cQk5uTO493lFjyyYr3B8ROC38Pjukp1c_ddrTfXCYQQBxuTl9GdECGSHLW_LQXzUo");'></div>
-<div class="absolute top-2 right-2 flex h-7 items-center justify-center rounded-full bg-orange-500 px-2.5">
-<p class="text-xs font-bold text-white">-25%</p>
-</div>
-</div>
-<div class="flex flex-col px-1">
-<p class="text-base font-semibold leading-tight text-zinc-800 dark:text-white">Corsair Vengeance DDR5 32GB</p>
-<div class="flex items-baseline gap-2">
-<p class="text-lg font-bold leading-normal text-primary">$99.99</p>
-<p class="text-sm font-normal leading-normal text-zinc-400 dark:text-zinc-500 line-through">$134.99</p>
-</div>
-</div>
-</div>
-<div class="flex flex-col gap-2">
-<div class="relative w-full">
-<div class="w-full aspect-square rounded-xl bg-cover bg-center bg-zinc-100 dark:bg-zinc-800" data-alt="Samsung 980 Pro 1TB SSD" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEeiqIPW-vv2J10gkZJd9MiO4KuNgVio6W_cBRak7g1v4PfvNQP5pz2mBEz0j9DLoYTCq6NkAocYFHtgL3osM4UQ1UF2JUvaCMrkObRSVpJVArLEd8vMF_ZTpi4sdQ8EffsUNYcEx5I2NtrdDt_uicl1vB7ApHfunKEwjtVjJFZQXr_pAwS1uw6OUQh3bfR_KNGF2boUfftrf1e4lITzHx8-aLBwf5Hn6DuE4LuiXphvPmbfwcP8C5x86utfRpLaTYu5wwMmmUKJg");'></div>
-<div class="absolute top-2 right-2 flex h-7 items-center justify-center rounded-full bg-orange-500 px-2.5">
-<p class="text-xs font-bold text-white">-10%</p>
-</div>
-</div>
-<div class="flex flex-col px-1">
-<p class="text-base font-semibold leading-tight text-zinc-800 dark:text-white">Samsung 980 Pro 1TB SSD</p>
-<div class="flex items-baseline gap-2">
-<p class="text-lg font-bold leading-normal text-primary">$89.99</p>
-<p class="text-sm font-normal leading-normal text-zinc-400 dark:text-zinc-500 line-through">$99.99</p>
-</div>
-</div>
-</div>
-<div class="flex flex-col gap-2">
-<div class="relative w-full">
-<div class="w-full aspect-square rounded-xl bg-cover bg-center bg-zinc-100 dark:bg-zinc-800" data-alt="ASUS ROG Strix B650-A Motherboard" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCtoCGbMTzHiyWW0FgQCx3Bw6ZF34fIsVGgHXZPK59vsPOqrw3p8HdEyL_e2XmdRzghApjz3P5e2in7bQZJwo--mYz9Rhsi03c_2FIG5gA_m_geyUFQ7l11YyS_uOyJHC8OtlcAlb6gwiHo39n8kJEgbYQj2V1-UpTmuaKj07OewIB825u3SPyrQVtItgc_MmhWHtnJjgPrtH6hZLZMnOxhrPE8zjWwFu1GpkPvZ_6TZMja5U5ZQmbJtIJrfGInTr1VQowYhsC9KdI");'></div>
-<div class="absolute top-2 right-2 flex h-7 items-center justify-center rounded-full bg-orange-500 px-2.5">
-<p class="text-xs font-bold text-white">-12%</p>
-</div>
-</div>
-<div class="flex flex-col px-1">
-<p class="text-base font-semibold leading-tight text-zinc-800 dark:text-white">ASUS ROG Strix B650-A</p>
-<div class="flex items-baseline gap-2">
-<p class="text-lg font-bold leading-normal text-primary">$229.99</p>
-<p class="text-sm font-normal leading-normal text-zinc-400 dark:text-zinc-500 line-through">$259.99</p>
-</div>
-</div>
-</div>
-<div class="flex flex-col gap-2">
-<div class="relative w-full">
-<div class="w-full aspect-square rounded-xl bg-cover bg-center bg-zinc-100 dark:bg-zinc-800" data-alt="Cooler Master Hyper 212 CPU Cooler" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDsjhR_HutvuTHzUy85NH0VOnRbw23Ln0YFRivtfoBogLU6h80hg_EvWXlzKn95nh-CLxL5klkgzqfL-1sSuUG2A7zGsclILqHcgKz4jZwfKq1ivn_8DB2nWO28agqdqIlPI0i-mKrfNsrA_d3luzfXeoTFZbXDF2c73UZwA1o_EDPatEZYASyiT5Glbkrs05M0LoVEE6R4ibSpagOGg53kxY3i76QDyoaOBBogTQXlOnmiaI5zELcFOd2nFZGxeGnxIgD9vn5L2K4");'></div>
-<div class="absolute top-2 right-2 flex h-7 items-center justify-center rounded-full bg-orange-500 px-2.5">
-<p class="text-xs font-bold text-white">-30%</p>
-</div>
-</div>
-<div class="flex flex-col px-1">
-<p class="text-base font-semibold leading-tight text-zinc-800 dark:text-white">Cooler Master Hyper 212</p>
-<div class="flex items-baseline gap-2">
-<p class="text-lg font-bold leading-normal text-primary">$34.99</p>
-<p class="text-sm font-normal leading-normal text-zinc-400 dark:text-zinc-500 line-through">$49.99</p>
-</div>
-</div>
-</div>
-</main>
-</div>
-
-</body></html>
+  <body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="relative flex h-auto min-h-screen w-full flex-col">
+      <header
+        class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm"
+      >
+        <div class="flex items-center p-4">
+          <div class="flex size-12 shrink-0 items-center justify-start">
+            <span
+              class="material-symbols-outlined text-zinc-800 dark:text-white"
+              >menu</span
+            >
+          </div>
+          <h1
+            class="flex-1 text-center text-lg font-bold tracking-tight text-zinc-800 dark:text-white"
+          >
+            Ofertas
+          </h1>
+          <div class="flex w-12 items-center justify-end">
+            <button
+              class="flex h-12 cursor-pointer items-center justify-center rounded-lg bg-transparent text-zinc-800 dark:text-white"
+            >
+              <span class="material-symbols-outlined">shopping_cart</span>
+            </button>
+          </div>
+        </div>
+        <div class="px-4 pb-3 pt-1">
+          <label class="flex flex-col min-w-40 h-12 w-full">
+            <div class="flex w-full flex-1 items-stretch rounded-xl h-full">
+              <div
+                class="flex items-center justify-center rounded-l-xl border-y border-l border-zinc-200 bg-white pl-4 dark:border-zinc-700 dark:bg-zinc-800"
+              >
+                <span
+                  class="material-symbols-outlined text-zinc-400 dark:text-zinc-500"
+                  >search</span
+                >
+              </div>
+              <input
+                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-xl border-y border-r border-zinc-200 bg-white px-4 text-base font-normal leading-normal text-zinc-800 placeholder:text-zinc-400 focus:outline-0 focus:ring-0 dark:border-zinc-700 dark:bg-zinc-800 dark:text-white dark:placeholder:text-zinc-500"
+                placeholder="Buscar GPUs, CPUs, RAM..."
+                value=""
+              />
+            </div>
+          </label>
+        </div>
+        <div class="flex gap-2 p-4 pt-1 overflow-x-auto">
+          <button
+            class="flex h-9 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-primary/20 px-4"
+          >
+            <p class="text-primary text-sm font-medium">Todo</p>
+          </button>
+          <button
+            class="flex h-9 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 px-4"
+          >
+            <p class="text-zinc-700 dark:text-zinc-300 text-sm font-medium">
+              GPUs
+            </p>
+          </button>
+          <button
+            class="flex h-9 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 px-4"
+          >
+            <p class="text-zinc-700 dark:text-zinc-300 text-sm font-medium">
+              CPUs
+            </p>
+          </button>
+          <button
+            class="flex h-9 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 px-4"
+          >
+            <p class="text-zinc-700 dark:text-zinc-300 text-sm font-medium">
+              RAM
+            </p>
+          </button>
+          <button
+            class="flex h-9 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 px-4"
+          >
+            <p class="text-zinc-700 dark:text-zinc-300 text-sm font-medium">
+              SSD
+            </p>
+          </button>
+          <button
+            class="flex h-9 shrink-0 items-center justify-center gap-x-1.5 rounded-full bg-zinc-200 dark:bg-zinc-800 px-4"
+          >
+            <p class="text-zinc-700 dark:text-zinc-300 text-sm font-medium">
+              Motherboards
+            </p>
+          </button>
+        </div>
+      </header>
+      <main
+        class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4 p-4"
+      >
+        <div class="flex flex-col gap-2">
+          <div class="relative w-full">
+            <div
+              class="w-full aspect-square rounded-xl bg-cover bg-center bg-zinc-100 dark:bg-zinc-800"
+              data-alt="NVIDIA GeForce RTX 4070 Graphics Card"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCcly8dhv53qL5fEYKrRI0g0t-yY-X1Y3FlIc_3Bi4HedFpPuDRs0__M5RAKF7sDKCVdwedQcaoCvrc7QiucITQzw68UcXUUlTBWObyJoPlXaX1OVcGwEPtZ_9gOmZWI1Dv94MAZrw9fWyN7SFnxYUe1ZruwMy-QG3SY-0o0clE3UysJocnB-U0jIeDifxaArwM3f4JxPPUkdC-8nK349O2xVKsRaJ6rOzZjGgynk6tyHKgtenOmyoMdrpnn20M-QREpWjgC5mMV4c');
+              "
+            ></div>
+            <div
+              class="absolute top-2 right-2 flex h-7 items-center justify-center rounded-full bg-orange-500 px-2.5"
+            >
+              <p class="text-xs font-bold text-white">-15%</p>
+            </div>
+          </div>
+          <div class="flex flex-col px-1">
+            <p
+              class="text-base font-semibold leading-tight text-zinc-800 dark:text-white"
+            >
+              NVIDIA GeForce RTX 4070
+            </p>
+            <div class="flex items-baseline gap-2">
+              <p class="text-lg font-bold leading-normal text-primary">
+                $549.99
+              </p>
+              <p
+                class="text-sm font-normal leading-normal text-zinc-400 dark:text-zinc-500 line-through"
+              >
+                $649.99
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="relative w-full">
+            <div
+              class="w-full aspect-square rounded-xl bg-cover bg-center bg-zinc-100 dark:bg-zinc-800"
+              data-alt="AMD Ryzen 7 7800X3D Processor"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDlQ86rkwOIEolvL4l9KTkX14EYLXxud93829QfXhtdj8QQu2Q0Cb5ZFhxmwBVgzSsNJLor2zsfx6LEtKochkUa8adrulqtOqL1dzKPfPSoeOzpLSumyrOZmn3PZR1Dnj0dglNUuu5cURfc5jSVi6sLonaE-pB90tpeL3lSzMEgNckR60UcA2fsTZUMbjhhLcucM-deWbtGgBcFVJJS00ama2u_w5P4YveD7ZNY9yBLMSVwJlhrM1TUE8AWll7w5_Ups-Bh4bf3NaY');
+              "
+            ></div>
+            <div
+              class="absolute top-2 right-2 flex h-7 items-center justify-center rounded-full bg-orange-500 px-2.5"
+            >
+              <p class="text-xs font-bold text-white">-20%</p>
+            </div>
+          </div>
+          <div class="flex flex-col px-1">
+            <p
+              class="text-base font-semibold leading-tight text-zinc-800 dark:text-white"
+            >
+              AMD Ryzen 7 7800X3D
+            </p>
+            <div class="flex items-baseline gap-2">
+              <p class="text-lg font-bold leading-normal text-primary">
+                $399.99
+              </p>
+              <p
+                class="text-sm font-normal leading-normal text-zinc-400 dark:text-zinc-500 line-through"
+              >
+                $499.99
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="relative w-full">
+            <div
+              class="w-full aspect-square rounded-xl bg-cover bg-center bg-zinc-100 dark:bg-zinc-800"
+              data-alt="Corsair Vengeance DDR5 32GB RAM Kit"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDZaB3UCWbyMVJZbiYNHL2DQn57O_KXQKjyndl-leOCBZnESDtQmrTO47ElAdc0ScNxvnXnVzZXsDx3sSb_91DlkXy9Ux8OnJbmdIIwPc7QXM5pALg53DVFccEgrWZeNSJRR1wMNaEYnmgnvskU0dEmrpc-atTJSSb6qzfIxRdi_3Av1gfZ9K3dfkYrkO8Va85nD-W3yul7F9cQk5uTO493lFjyyYr3B8ROC38Pjukp1c_ddrTfXCYQQBxuTl9GdECGSHLW_LQXzUo');
+              "
+            ></div>
+            <div
+              class="absolute top-2 right-2 flex h-7 items-center justify-center rounded-full bg-orange-500 px-2.5"
+            >
+              <p class="text-xs font-bold text-white">-25%</p>
+            </div>
+          </div>
+          <div class="flex flex-col px-1">
+            <p
+              class="text-base font-semibold leading-tight text-zinc-800 dark:text-white"
+            >
+              Corsair Vengeance DDR5 32GB
+            </p>
+            <div class="flex items-baseline gap-2">
+              <p class="text-lg font-bold leading-normal text-primary">
+                $99.99
+              </p>
+              <p
+                class="text-sm font-normal leading-normal text-zinc-400 dark:text-zinc-500 line-through"
+              >
+                $134.99
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="relative w-full">
+            <div
+              class="w-full aspect-square rounded-xl bg-cover bg-center bg-zinc-100 dark:bg-zinc-800"
+              data-alt="Samsung 980 Pro 1TB SSD"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDEeiqIPW-vv2J10gkZJd9MiO4KuNgVio6W_cBRak7g1v4PfvNQP5pz2mBEz0j9DLoYTCq6NkAocYFHtgL3osM4UQ1UF2JUvaCMrkObRSVpJVArLEd8vMF_ZTpi4sdQ8EffsUNYcEx5I2NtrdDt_uicl1vB7ApHfunKEwjtVjJFZQXr_pAwS1uw6OUQh3bfR_KNGF2boUfftrf1e4lITzHx8-aLBwf5Hn6DuE4LuiXphvPmbfwcP8C5x86utfRpLaTYu5wwMmmUKJg');
+              "
+            ></div>
+            <div
+              class="absolute top-2 right-2 flex h-7 items-center justify-center rounded-full bg-orange-500 px-2.5"
+            >
+              <p class="text-xs font-bold text-white">-10%</p>
+            </div>
+          </div>
+          <div class="flex flex-col px-1">
+            <p
+              class="text-base font-semibold leading-tight text-zinc-800 dark:text-white"
+            >
+              Samsung 980 Pro 1TB SSD
+            </p>
+            <div class="flex items-baseline gap-2">
+              <p class="text-lg font-bold leading-normal text-primary">
+                $89.99
+              </p>
+              <p
+                class="text-sm font-normal leading-normal text-zinc-400 dark:text-zinc-500 line-through"
+              >
+                $99.99
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="relative w-full">
+            <div
+              class="w-full aspect-square rounded-xl bg-cover bg-center bg-zinc-100 dark:bg-zinc-800"
+              data-alt="ASUS ROG Strix B650-A Motherboard"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtoCGbMTzHiyWW0FgQCx3Bw6ZF34fIsVGgHXZPK59vsPOqrw3p8HdEyL_e2XmdRzghApjz3P5e2in7bQZJwo--mYz9Rhsi03c_2FIG5gA_m_geyUFQ7l11YyS_uOyJHC8OtlcAlb6gwiHo39n8kJEgbYQj2V1-UpTmuaKj07OewIB825u3SPyrQVtItgc_MmhWHtnJjgPrtH6hZLZMnOxhrPE8zjWwFu1GpkPvZ_6TZMja5U5ZQmbJtIJrfGInTr1VQowYhsC9KdI');
+              "
+            ></div>
+            <div
+              class="absolute top-2 right-2 flex h-7 items-center justify-center rounded-full bg-orange-500 px-2.5"
+            >
+              <p class="text-xs font-bold text-white">-12%</p>
+            </div>
+          </div>
+          <div class="flex flex-col px-1">
+            <p
+              class="text-base font-semibold leading-tight text-zinc-800 dark:text-white"
+            >
+              ASUS ROG Strix B650-A
+            </p>
+            <div class="flex items-baseline gap-2">
+              <p class="text-lg font-bold leading-normal text-primary">
+                $229.99
+              </p>
+              <p
+                class="text-sm font-normal leading-normal text-zinc-400 dark:text-zinc-500 line-through"
+              >
+                $259.99
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <div class="relative w-full">
+            <div
+              class="w-full aspect-square rounded-xl bg-cover bg-center bg-zinc-100 dark:bg-zinc-800"
+              data-alt="Cooler Master Hyper 212 CPU Cooler"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDsjhR_HutvuTHzUy85NH0VOnRbw23Ln0YFRivtfoBogLU6h80hg_EvWXlzKn95nh-CLxL5klkgzqfL-1sSuUG2A7zGsclILqHcgKz4jZwfKq1ivn_8DB2nWO28agqdqIlPI0i-mKrfNsrA_d3luzfXeoTFZbXDF2c73UZwA1o_EDPatEZYASyiT5Glbkrs05M0LoVEE6R4ibSpagOGg53kxY3i76QDyoaOBBogTQXlOnmiaI5zELcFOd2nFZGxeGnxIgD9vn5L2K4');
+              "
+            ></div>
+            <div
+              class="absolute top-2 right-2 flex h-7 items-center justify-center rounded-full bg-orange-500 px-2.5"
+            >
+              <p class="text-xs font-bold text-white">-30%</p>
+            </div>
+          </div>
+          <div class="flex flex-col px-1">
+            <p
+              class="text-base font-semibold leading-tight text-zinc-800 dark:text-white"
+            >
+              Cooler Master Hyper 212
+            </p>
+            <div class="flex items-baseline gap-2">
+              <p class="text-lg font-bold leading-normal text-primary">
+                $34.99
+              </p>
+              <p
+                class="text-sm font-normal leading-normal text-zinc-400 dark:text-zinc-500 line-through"
+              >
+                $49.99
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
