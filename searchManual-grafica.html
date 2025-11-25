@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Búsqueda Manual - Tarjeta Gráfica</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#4361EE",
+            "background-light": "#F8F7FF",
+            "background-dark": "#121212",
+            "input-light": "#FFFFFF",
+            "input-dark": "#1E1E1E",
+            "text-light": "#000000",
+            "text-dark": "#FFFFFF",
+            "placeholder-light": "#A0AEC0",
+            "placeholder-dark": "#718096",
+            "border-light": "#E2E8F0",
+            "border-dark": "#4A5568",
+          },
+          fontFamily: {
+            display: ["Poppins", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.75rem",
+            lg: "1rem",
+          },
+        },
+      },
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="mx-auto max-w-sm overflow-hidden rounded-3xl bg-background-light dark:bg-background-dark shadow-xl">
+<div class="h-screen p-6 flex flex-col">
+<div class="flex justify-between items-center text-black dark:text-white mb-6">
+<span class="text-sm font-semibold">9:30</span>
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-base">signal_cellular_alt</span>
+<span class="material-symbols-outlined text-base">wifi</span>
+<span class="material-symbols-outlined text-base">battery_full</span>
+</div>
+</div>
+<header class="flex items-center mb-8">
+<button class="p-2 -ml-2 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-3xl">arrow_back_ios_new</span>
+</button>
+<h1 class="text-xl font-bold text-center flex-grow">Tarjeta Gráfica</h1>
+<div class="w-8"></div>
+</header>
+<main class="flex-grow flex flex-col">
+<div class="space-y-6 flex-grow">
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="marca">Marca</label>
+<div class="relative">
+<select class="w-full appearance-none pl-4 pr-10 py-3 bg-input-light dark:bg-input-dark text-text-light dark:text-text-dark border border-border-light dark:border-border-dark rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" id="marca">
+<option>Seleccionar marca</option>
+<option>NVIDIA</option>
+<option>AMD</option>
+<option>Intel</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="chipset">Chipset</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-placeholder-light dark:text-placeholder-dark">memory</span>
+<input class="w-full pl-10 pr-4 py-3 bg-input-light dark:bg-input-dark text-text-light dark:text-text-dark border border-border-light dark:border-border-dark rounded-lg focus:ring-2 focus:ring-primary focus:border-primary placeholder-placeholder-light dark:placeholder-placeholder-dark" id="chipset" placeholder="Ej: RTX 3080" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="vram">Memoria VRAM (GB)</label>
+<div class="relative">
+<select class="w-full appearance-none pl-4 pr-10 py-3 bg-input-light dark:bg-input-dark text-text-light dark:text-text-dark border border-border-light dark:border-border-dark rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" id="vram">
+<option>Seleccionar memoria</option>
+<option>4 GB</option>
+<option>6 GB</option>
+<option>8 GB</option>
+<option>12 GB</option>
+<option>16 GB</option>
+<option>24 GB</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="interfaz">Interfaz
+<div class="relative">
+<select class="w-full appearance-none pl-4 pr-10 py-3 bg-input-light dark:bg-input-dark text-text-light dark:text-text-dark border border-border-light dark:border-border-dark rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" id="interfaz">
+<option>Seleccionar interfaz</option>
+<option>PCI Express 4.0</option>
+<option>PCI Express 3.0</option>
+<option>PCI Express 5.0</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</label></div>
+</div>
+<button class="w-full bg-primary text-white font-bold py-4 rounded-lg hover:bg-opacity-90 transition-colors mt-8">
+      Buscar
+    </button>
+</main>
+<div class="flex-shrink-0 pt-8 pb-2">
+<div class="w-32 h-1.5 bg-black dark:bg-gray-700 rounded-full mx-auto"></div>
+</div>
+</div>
+</div>
+
+</body></html>

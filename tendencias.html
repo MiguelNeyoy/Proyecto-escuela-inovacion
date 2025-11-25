@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tendencias - Componentes de PC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+              "card-light": "#ffffff",
+              "card-dark": "#192233",
+              "text-primary-light": "#0d121b",
+              "text-primary-dark": "#f0f2f5",
+              "text-secondary-light": "#4c669a",
+              "text-secondary-dark": "#94a3b8",
+              "border-light": "#cfd7e7",
+              "border-dark": "#2d3748"
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<button class="text-text-primary-light dark:text-text-primary-dark flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-text-primary-light dark:text-text-primary-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Tendencias</h1>
+</div>
+</header>
+<!-- Tabs -->
+<div class="sticky top-[72px] z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="overflow-x-auto whitespace-nowrap">
+<div class="flex border-b border-border-light dark:border-border-dark px-4 gap-6">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-primary text-text-primary-light dark:text-text-primary-dark pb-[13px] pt-4 shrink-0" href="#">
+<p class="text-sm font-bold leading-normal">Todos</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-text-secondary-light dark:text-text-secondary-dark pb-[13px] pt-4 shrink-0" href="#">
+<p class="text-sm font-medium leading-normal">Procesadores</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-text-secondary-light dark:text-text-secondary-dark pb-[13px] pt-4 shrink-0" href="#">
+<p class="text-sm font-medium leading-normal">Tarjetas de Video</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-text-secondary-light dark:text-text-secondary-dark pb-[13px] pt-4 shrink-0" href="#">
+<p class="text-sm font-medium leading-normal">Placas Base</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-text-secondary-light dark:text-text-secondary-dark pb-[13px] pt-4 shrink-0" href="#">
+<p class="text-sm font-medium leading-normal">Memoria RAM</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-text-secondary-light dark:text-text-secondary-dark pb-[13px] pt-4 shrink-0" href="#">
+<p class="text-sm font-medium leading-normal">Almacenamiento</p>
+</a>
+</div>
+</div>
+</div>
+<!-- Image Grid -->
+<main class="flex-1 p-4">
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-4">
+<div class="flex flex-col gap-3 pb-3 bg-card-light dark:bg-card-dark p-3 rounded-xl shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="NVIDIA GeForce RTX 4080 graphics card on a white background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsaLTuNilGONj11CPpz4gSvyu7x3_JQSugAt5YSkfoRZZH9X5D8SiqW7J3XvF9m9VWnUCLn7Jrn6-NBhLV1MOrApeUR2s5Svb9yOTih4scCg8v_Xw89c9MKLvbGg9lspWLzvGX5moH98mmc2TvAagDzfrKU80QIRYkZFnxeSsoHzjJuJDQ0jdMeqqaFWGMvisiW7mZ3t2jNVCnLYhpEFPkIVlyQ5uZNmA923heXqlX-x0jMoSaRpaJBpWf6fsxj7wEUsL91iUjCqI");'></div>
+<div>
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-semibold leading-normal truncate">NVIDIA GeForce RTX 4080</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">16GB GDDR6X</p>
+<div class="flex items-center gap-1 mt-1 text-primary">
+<span class="material-symbols-outlined text-base">local_fire_department</span>
+<p class="text-sm font-semibold leading-normal">Top 5 en Ventas</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-card-light dark:bg-card-dark p-3 rounded-xl shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="AMD Ryzen 7 7800X3D CPU on a motherboard" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDDQLEMhATU4_Jjd7ABUGbGgYSv5tmA041GQ_Pz8HEzKXAd7-N2IBvIjFxO6HjzgnnUWDfWBKjD-hcBVN9y1b5pPdib5Bzdjh22to9BzLtzYrN3X3vyq3pHkZU2AsvGMDg6njv7oZzQ9_DQsTLlMPCpVJsfQ43j4CEQd_9aFZIDLszxBYR3aBJNwPZ9wDpEHmEA-sjMpWhUGElN-3Ceucvm6q3bRHg4Ntqc6vEJ8WbABt-EEWdvm2K2BNuXRsoHB55aG4yo06BVwaU");'></div>
+<div>
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-semibold leading-normal truncate">AMD Ryzen 7 7800X3D</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">8 Cores / 16 Threads</p>
+<div class="flex items-center gap-1 mt-1 text-primary">
+<span class="material-symbols-outlined text-base">trending_up</span>
+<p class="text-sm font-semibold leading-normal">+10k Vistas</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-card-light dark:bg-card-dark p-3 rounded-xl shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="ASUS ROG STRIX Z790-E motherboard" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBRLoeHfj88oiIvvJBod7qJhMLzqe3LSRnQwNKDzdBLDF7y-6MgUfT8Tq-qdGMcmp4845WUUMVkfHl4jM1RhiEs7RBzjfop40PaR4YVsUIjz7_BJHnsqdnp0PfEa747TKOG4mNwfQdQugqjl2lH12VgZyATD-UjD3t3BSv4_9aaIWh59o1ftO1oyrOfMUjgWZkkTPY4SUQ8hl1ZbwJffxvC-1XW3qYeJccnTemsUPwVUjq2QTMxwTL61EheWSWysgMDQ-3GVOc2HAc");'></div>
+<div>
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-semibold leading-normal truncate">ASUS ROG STRIX Z790-E</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">LGA 1700, Wi-Fi 6E</p>
+<div class="flex items-center gap-1 mt-1 text-primary">
+<span class="material-symbols-outlined text-base">local_fire_department</span>
+<p class="text-sm font-semibold leading-normal">Top 10 Placas Base</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-card-light dark:bg-card-dark p-3 rounded-xl shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Corsair Vengeance DDR5 RAM sticks" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBaZG4Lvc7EPm6xbY1YmnYMfne80uGvWzVJZq_NJ5uGCzZkS-et8I3iGTwKeLQBlVvQ_nW0STQ5j7z2DgeSQZAdzzZbLIizfvsM2UB1cOB2cVZZj_xbbrHH0PG-iVW9v1dlB23tDoERqv4-G_Tx2PArBIbLHyG7bMz3TiEOq0vf-rrW_bKdLshth0IvhWGakOauSNxY6oGRNgE6Ihcf-YXMwCvRFx-0A8zoYpnJJsZItYhRh9TJFb31wikqf3phQ0QHGhqd6K1ObKk");'></div>
+<div>
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-semibold leading-normal truncate">Corsair Vengeance DDR5</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">32GB 5600MHz CL36</p>
+<div class="flex items-center gap-1 mt-1 text-primary">
+<span class="material-symbols-outlined text-base">trending_up</span>
+<p class="text-sm font-semibold leading-normal">+8k Vistas</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-card-light dark:bg-card-dark p-3 rounded-xl shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Samsung 980 Pro NVMe M.2 SSD" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQaSWhZ0u-M0S_oNG9k2aog-4V47Ouh9nqO-3S65KJ6pKDDFQVxZ1IfWYGJY8eQtmIEPOqvdcshf6PTyp2iIzqeO5HnalM59rz-rhtFrtI4Ue1OaDOT47PbxrgRgVEzzKtWDvZs-lBAlFmX0b0sHVwstTijGbAu8MqYippHlooPHgO2g1H0rn0xtK-5RAe276iF3Y2u8JVg8rpuTiSvtxFuqqapSy0Fq8_CvB8MRTE2AARwMBuYsxbHAb7W_ExPwZtv2f_p32_8qM");'></div>
+<div>
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-semibold leading-normal truncate">Samsung 980 Pro 2TB</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">NVMe M.2 SSD</p>
+<div class="flex items-center gap-1 mt-1 text-primary">
+<span class="material-symbols-outlined text-base">local_fire_department</span>
+<p class="text-sm font-semibold leading-normal">Más Vendido</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 pb-3 bg-card-light dark:bg-card-dark p-3 rounded-xl shadow-sm">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Intel Core i9-13900K CPU processor" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuABFlgLk_mqhWKnHwV0zV0CPr5Sp7eLiS5AoUZs8HjgDwBja35WGUflORsTOyKS-c7rPVOQ_A1-WyDqZMSXLjvH-stukCchEaH5Tpg5Zs5cAqV7E5c8Nt0QZ72L25yhAZpZncA3eTT6n4kDt7ZCtooOxxCOBKbAGWjqeJPlwra2byP1pYMET1vjba54Ve3keHTBukma3cXq4VoazDRxnPpL6AMOtq1wVAqCehxrYZRHlFhiEW0T_S0u1gE3quKe_AEc9S4MZFVSM1Y");'></div>
+<div>
+<p class="text-text-primary-light dark:text-text-primary-dark text-base font-semibold leading-normal truncate">Intel Core i9-13900K</p>
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-sm font-normal leading-normal">24 Cores / 32 Threads</p>
+<div class="flex items-center gap-1 mt-1 text-primary">
+<span class="material-symbols-outlined text-base">trending_up</span>
+<p class="text-sm font-semibold leading-normal">Tendencia</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>
