@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import TopBar from '../../components/TopBar';
+import { PageContainer } from '../../components/PageContainer';
 
 const SearchRam: React.FC = () => {
   const navigate = useNavigate();
+  const [filtersVisible, setFiltersVisible] = useState(false);
   const [filters, setFilters] = useState({
     generation: '',
     capacity: '',
@@ -11,6 +13,10 @@ const SearchRam: React.FC = () => {
     minPrice: '',
     maxPrice: ''
   });
+
+  useEffect(() => {
+    setTimeout(() => setFiltersVisible(true), 100);
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
@@ -33,11 +39,11 @@ const SearchRam: React.FC = () => {
   };
 
   return (
-    <div className="flex min-h-screen flex-col bg-background-light dark:bg-background-dark font-display">
+    <PageContainer className="flex min-h-screen flex-col bg-background-light dark:bg-background-dark font-display">
       <TopBar title="Memoria RAM" />
       
       <main className="flex-grow space-y-6 p-6">
-        <div className="space-y-2">
+        <div className="space-y-2 animate-slide-in-up" style={{ animationDelay: '0.1s', animationFillMode: 'backwards' }}>
           <label className="font-medium text-text-light dark:text-text-dark">Generación</label>
           <div className="relative">
              <select 
@@ -55,7 +61,7 @@ const SearchRam: React.FC = () => {
           </div>
         </div>
 
-        <div className="space-y-2">
+        <div className="space-y-2 animate-slide-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'backwards' }}>
           <label className="font-medium text-text-light dark:text-text-dark">Cantidad</label>
            <div className="relative">
             <select 
@@ -74,7 +80,7 @@ const SearchRam: React.FC = () => {
           </div>
         </div>
 
-        <div className="space-y-2">
+        <div className="space-y-2 animate-slide-in-up" style={{ animationDelay: '0.3s', animationFillMode: 'backwards' }}>
           <label className="font-medium text-text-light dark:text-text-dark">Marca (opcional)</label>
           <input
             name="brand"
@@ -86,7 +92,7 @@ const SearchRam: React.FC = () => {
           />
         </div>
 
-        <div className="space-y-2">
+        <div className="space-y-2 animate-slide-in-up" style={{ animationDelay: '0.4s', animationFillMode: 'backwards' }}>
           <label className="font-medium text-text-light dark:text-text-dark">Rango de Precio</label>
           <div className="flex items-center space-x-3">
             <input
@@ -110,21 +116,21 @@ const SearchRam: React.FC = () => {
         </div>
       </main>
 
-      <div className="mt-auto p-6 space-y-3">
+      <div className="mt-auto p-6 space-y-3 animate-fade-in" style={{ animationDelay: '0.5s', animationFillMode: 'backwards' }}>
         <button
           onClick={handleReset}
-          className="w-full rounded-lg border border-primary text-primary py-4 font-semibold hover:bg-primary/5 active:scale-98"
+          className="w-full rounded-lg border border-primary text-primary py-4 font-semibold hover:bg-primary/5 active:scale-95 transition-all"
         >
           Limpiar Filtros
         </button>
         <button
           onClick={handleSearch}
-          className="w-full rounded-lg bg-primary py-4 font-semibold text-white transition-opacity hover:bg-opacity-90 active:scale-98 shadow-md"
+          className="w-full rounded-lg bg-primary py-4 font-semibold text-white transition-opacity hover:bg-opacity-90 active:scale-95 shadow-md"
         >
           Buscar
         </button>
       </div>
-    </div>
+    </PageContainer>
   );
 };
 

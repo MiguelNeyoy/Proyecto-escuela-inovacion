@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import { PageContainer } from '../components/PageContainer';
 
 const Login: React.FC = () => {
   const navigate = useNavigate();
@@ -17,17 +18,17 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="flex min-h-screen w-full flex-col items-center justify-center p-6 font-grotesk">
+    <PageContainer className="flex min-h-screen w-full flex-col items-center justify-center p-6 font-grotesk">
       <div className="flex w-full max-w-sm flex-col items-center gap-6">
-        <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-primary/10 dark:bg-primary/20">
+        <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-primary/10 dark:bg-primary/20 animate-zoom-in">
           <span className="material-symbols-outlined text-5xl text-primary">memory</span>
         </div>
         
-        <h1 className="text-center text-3xl font-bold leading-tight text-text-light dark:text-white">
+        <h1 className="text-center text-3xl font-bold leading-tight text-text-light dark:text-white animate-slide-in-down">
           Buy&Safely
         </h1>
 
-        <form onSubmit={handleLogin} className="flex w-full flex-col gap-4">
+        <form onSubmit={handleLogin} className="flex w-full flex-col gap-4 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'backwards' }}>
           <label className="flex flex-col">
             <p className="pb-2 text-base font-medium text-text-light dark:text-text-dark">Email</p>
             <input
@@ -66,16 +67,16 @@ const Login: React.FC = () => {
           </button>
         </form>
 
-        <p className="text-center text-sm text-gray-500 dark:text-gray-400">
+        <p className="text-center text-sm text-gray-500 dark:text-gray-400 animate-fade-in" style={{ animationDelay: '0.3s', animationFillMode: 'backwards' }}>
           New here? <Link to="/signup" className="font-bold text-primary hover:underline">Create an account</Link>
         </p>
-        <p className="text-center text-sm">
+        <p className="text-center text-sm animate-fade-in" style={{ animationDelay: '0.4s', animationFillMode: 'backwards' }}>
           <Link to="/home" className="text-gray-400 hover:text-text-light dark:hover:text-white transition-colors">
             Continue as Guest
           </Link>
         </p>
       </div>
-    </div>
+    </PageContainer>
   );
 };
 

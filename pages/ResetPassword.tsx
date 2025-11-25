@@ -1,19 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import TopBar from '../components/TopBar';
+import { PageContainer } from '../components/PageContainer';
 
 const ResetPassword: React.FC = () => {
   return (
-    <div className="flex min-h-screen flex-col bg-background-light dark:bg-background-dark font-grotesk">
+    <PageContainer className="flex min-h-screen flex-col bg-background-light dark:bg-background-dark font-grotesk">
       <TopBar title="Reset Password" />
       
       <div className="flex flex-1 flex-col justify-between p-6">
-        <div>
+        <div className="animate-slide-in-up">
           <p className="text-base text-gray-500 dark:text-gray-400 pb-6">
             Enter the email address associated with your account and we'll send you a link to reset your password.
           </p>
           
-          <label className="flex flex-col">
+          <label className="flex flex-col animate-slide-in-up" style={{ animationDelay: '0.1s', animationFillMode: 'backwards' }}>
             <p className="text-text-light dark:text-white font-medium pb-2">Email Address</p>
             <div className="relative">
               <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">mail</span>
@@ -26,8 +27,8 @@ const ResetPassword: React.FC = () => {
           </label>
         </div>
 
-        <div className="flex flex-col items-center gap-4">
-          <button className="w-full h-12 bg-primary text-white font-bold rounded-lg hover:bg-opacity-90">
+        <div className="flex flex-col items-center gap-4 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'backwards' }}>
+          <button className="w-full h-12 bg-primary text-white font-bold rounded-lg hover:bg-opacity-90 transition-all active:scale-95">
             Send Reset Link
           </button>
           <Link to="/login" className="text-primary font-medium hover:underline">
@@ -35,7 +36,7 @@ const ResetPassword: React.FC = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </PageContainer>
   );
 };
 

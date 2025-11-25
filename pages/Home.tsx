@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { PageContainer } from '../components/PageContainer';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
+  const [itemsVisible, setItemsVisible] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setItemsVisible(true), 100);
+  }, []);
 
   return (
-    <div className="flex h-screen flex-col bg-background-light dark:bg-background-dark font-display">
+    <PageContainer className="flex h-screen flex-col bg-background-light dark:bg-background-dark font-display">
       {/* Header */}
-      <header className="px-6 pt-8 pb-4">
+      <header className="px-6 pt-8 pb-4 animate-slide-in-down">
         <div className="flex items-center justify-between mb-6">
            <h1 className="text-2xl font-bold text-text-light dark:text-white">
             Buy&Safely
@@ -41,26 +47,32 @@ const Home: React.FC = () => {
       {/* Grid Menu */}
       <main className="flex-grow px-6 pb-6 overflow-y-auto">
         <div className="grid grid-cols-2 gap-4">
-          <CategoryCard title="Memoria RAM" to="/search/ram" icon="memory" />
-          <CategoryCard title="Almacenamiento" to="/search/storage" icon="hard_drive" />
-          <CategoryCard title="Procesadores" to="/search/cpu" icon="developer_board" />
-          <CategoryCard title="Fuente de Poder" to="/search/psu" icon="power" />
-          <CategoryCard title="Accesorios" to="/search/accessories" icon="keyboard" />
-          <CategoryCard title="Placa Madre" to="/search/motherboard" icon="settings_input_component" />
-          <CategoryCard title="Tarjeta Gráfica" to="/search/gpu" icon="videogame_asset" />
-          <CategoryCard title="Refrigeración" to="/search/cooling" icon="mode_fan" />
+          <CategoryCard title="Memoria RAM" to="/search/ram" icon="memory" visible={itemsVisible} index={0} />
+          <CategoryCard title="Almacenamiento" to="/search/storage" icon="hard_drive" visible={itemsVisible} index={1} />
+          <CategoryCard title="Procesadores" to="/search/cpu" icon="developer_board" visible={itemsVisible} index={2} />
+          <CategoryCard title="Fuente de Poder" to="/search/psu" icon="power" visible={itemsVisible} index={3} />
+          <CategoryCard title="Accesorios" to="/search/accessories" icon="keyboard" visible={itemsVisible} index={4} />
+          <CategoryCard title="Placa Madre" to="/search/motherboard" icon="settings_input_component" visible={itemsVisible} index={5} />
+          <CategoryCard title="Tarjeta Gráfica" to="/search/gpu" icon="videogame_asset" visible={itemsVisible} index={6} />
+          <CategoryCard title="Refrigeración" to="/search/cooling" icon="mode_fan" visible={itemsVisible} index={7} />
         </div>
       </main>
       
       <div className="flex justify-center pb-2">
         <div className="w-32 h-1.5 bg-gray-300 dark:bg-gray-700 rounded-full"></div>
       </div>
-    </div>
+    </PageContainer>
   );
 };
 
-const CategoryCard: React.FC<{ title: string; to: string; icon: string }> = ({ title, to, icon }) => (
-  <Link to={to} className="flex flex-col items-center justify-center p-4 h-32 bg-primary/5 dark:bg-primary/10 rounded-2xl hover:bg-primary/10 dark:hover:bg-primary/20 transition-all active:scale-95 group">
+const CategoryCard: React.FC<{ title: string; to: string; icon: string; visible: boolean; index: number }> = ({ title, to, icon, visible, index }) => (
+  <Link 
+    to={to} 
+    className="flex flex-col items-center justify-center p-4 h-32 bg-primary/5 dark:bg-primary/10 rounded-2xl hover:bg-primary/10 dark:hover:bg-primary/20 transition-all active:scale-95 group"
+    style={{
+      animation: visible ? `zoomIn 0.5s ease-out ${index * 0.08}s backwards` : 'none'
+    }}
+  >
     <span className="material-symbols-outlined text-4xl text-primary mb-2 group-hover:scale-110 transition-transform">{icon}</span>
     <span className="text-primary dark:text-blue-300 font-medium text-center text-sm">{title}</span>
   </Link>
